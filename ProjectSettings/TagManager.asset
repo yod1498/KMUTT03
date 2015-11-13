@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player
   - Gold
+  - Enemy
   layers:
   - Default
   - TransparentFX

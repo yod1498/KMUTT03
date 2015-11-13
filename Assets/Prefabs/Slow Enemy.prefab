@@ -48,7 +48,7 @@ GameObject:
   - 65: {fileID: 6535048}
   m_Layer: 0
   m_Name: Slow Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,6 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2ec2d90260641faa4817f94c4c87cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayEnemy: 3
+  isWalking: 0
 --- !u!195 &19530236
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -341,7 +343,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143560}
